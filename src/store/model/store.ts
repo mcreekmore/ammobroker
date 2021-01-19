@@ -11,6 +11,34 @@ export type Pricing = {
 };
 
 export type Brand =
+// AMMUNITION
+  | 'geco'
+  | 'winchester'
+  | 'federal'
+  | 'hornady'
+  | 'tula'
+  | 'tulammo'
+  | 'remington'
+  | 'wolf'
+  | 'norma'
+  | 'speer'
+  | 'ammo inc'
+  | 'sig sauer'
+  | 'cci'
+  | 'blazer brass'
+  | 'fiocchi'
+  | 'x-def'
+  | 'browning'
+  | 'bronze'
+  | 'aguila'
+  | 'hsm'
+  | 'magtech'
+  | 'sellier & bellot'
+  | 'ppu'
+  | 'usc'
+  | 'pmc'
+  | 'prvi'
+// GPU
   | 'test:brand'
   | 'captcha-deterrent'
   | 'amd'
@@ -37,6 +65,7 @@ export type Brand =
   | 'zotac';
 
 export type Series =
+// GPU
   | 'test:series'
   | 'captcha-deterrent'
   | '3060ti'
@@ -55,9 +84,26 @@ export type Series =
   | 'sonyps5de'
   | 'sf'
   | 'xboxsx'
-  | 'xboxss';
+  | 'xboxss'
+  
+  // AMMUNITION
+  | '9mm'
+  | '5.56x45mm'
+  | '.223rem'
+  | '454';
 
 export type Model =
+// AMMUNITION
+  | 'luger'
+  | 'nato'
+  | 'remington'
+  | 'rem'
+  | 'casull'
+  | 'fmj'
+  | 'bt'
+  | 'm855'
+  | 'hp'
+// GPU
   | 'test:model'
   | 'captcha-deterrent'
   | '5600x'

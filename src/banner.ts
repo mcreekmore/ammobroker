@@ -20,6 +20,6 @@ ${version}`,
       .hex(hexColor)
       .bold(ascii ? this.asciiVersion : this.stringVersion);
   },
-  stringVersion: `ＳＴＲＥＥＴＭＥＲＣＨＡＮＴ
+  stringVersion: `AMMOBROKER
 ${version}`,
 };

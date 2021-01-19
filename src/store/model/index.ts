@@ -132,7 +132,25 @@ import {Xbox} from './xbox';
 import {Zotac} from './zotac';
 import {logger} from '../../logger';
 
+// AMMUNITION
+import {Natchez} from './natchez';
+import {TargetSportUSA} from './targetsportusa';
+import {PalmettoStateArmory} from './palmettostatearmory';
+import {SigSauer} from './sigsauer';
+import {Federal} from './federal';
+import {FreedomMunitions} from './freedommunitions';
+
+
 export const storeList = new Map([
+  // AMMUNITION
+  [Natchez.name, Natchez],
+  [TargetSportUSA.name, TargetSportUSA],
+  [PalmettoStateArmory.name, PalmettoStateArmory],
+  [SigSauer.name, SigSauer],
+  [Federal.name, Federal],
+  [FreedomMunitions.name, FreedomMunitions],
+
+  // GPU
   [AComPC.name, AComPC],
   [Adorama.name, Adorama],
   [Allneeds.name, Allneeds],
