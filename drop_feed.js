@@ -13,7 +13,8 @@ function read() {
     lines.forEach((line, index) => {
       if (line.includes('IN STOCK')) {
         let lineSplit = line.split('info');
-        let timeStamp = lineSplit[0].trim().split('[')[1].split(']')[0];
+        // let timeStamp = lineSplit[0].trim().split('[')[1].split(']')[0];
+        let timeStamp = lineSplit[0].trim();
         let productSplit = lineSplit[1].trim().split(' ');
         let link = lines[index + 1];
 
@@ -29,7 +30,7 @@ function read() {
         recentlyAvailable.push(listing);
 
         console.log(
-          '[' + listing.timestamp + '] ' + listing.store + ':',
+          listing.timestamp + listing.store + ':',
           listing.brand + ' ' + listing.calibur + ' ' + listing.type
         );
 
