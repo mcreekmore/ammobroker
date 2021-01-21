@@ -33,11 +33,12 @@ function read() {
           listing.timestamp + listing.store + ':',
           listing.brand + ' ' + listing.calibur + ' ' + listing.type
         );
-
-        // console.log(productSplit);
       }
     });
 
+    if (recentlyAvailable.length === 0) {
+      console.log('No Available Listings Found Yet');
+    }
     // console.log(recentlyAvailable);
   } catch (err) {
     console.error(err);
