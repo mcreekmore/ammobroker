@@ -6,7 +6,7 @@
   /></a>
 </p>
 <p align="center">
-  <strong>The world's easiest, most powerful stock checker now for ammunitions</strong>
+  <strong>The world's easiest, most powerful ammunitions broker.</strong>
 </p>
 <p align="center">
   <em>Forked from <a href="https://jef.codes/streetmerchant">jef.codes/streetmerchant</a></em>
