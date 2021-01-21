@@ -6,26 +6,10 @@
   /></a>
 </p>
 <p align="center">
-  <strong>The world's easiest, most powerful stock checker</strong>
+  <strong>The world's easiest, most powerful stock checker now for ammunitions</strong>
 </p>
 <p align="center">
-  <a href="https://github.com/jef/streetmerchant/actions?query=workflow%3ARelease"
-    ><img src="https://github.com/jef/streetmerchant/workflows/Release/badge.svg"
-  /></a>
-  <a href="https://discord.gg/gbVY4vB9JF"
-    ><img
-      src="https://img.shields.io/discord/773913070665859073.svg?label=chat&logo=discord&logoColor=ffffff&color=7389D8"
-      alt="Tweet"
-  /></a>
-  <a
-    href="https://twitter.com/intent/tweet?text=Beat%20the%20masses%20with%20streetmerchant&url=https://github.com/jef/streetmerchant&hashtags=typescript,opensource,bot,shopping"
-    ><img
-      src="https://img.shields.io/badge/twitter-share-green?logo=twitter&style=social"
-      alt="Tweet"
-  /></a>
-</p>
-<p align="center">
-  <em>To get started, visit <a href="https://jef.codes/streetmerchant">jef.codes/streetmerchant</a></em>
+  <em>Forked from <a href="https://jef.codes/streetmerchant">jef.codes/streetmerchant</a></em>
 </p>
 
 ## Features
@@ -41,8 +25,8 @@ First and foremost, this service _will not_ automatically buy for you.
 streetmerchant runs on Node.js 14:
 
 ```shell
-git clone https://github.com/jef/streetmerchant.git
-cd streetmerchant && npm i && npm run start
+git clone https://github.com/mcreekmore/ammobroker
+cd ammobroker && npm i && npm run start
 ```
 
 For more information and customization, visit [jef.codes/streetmerchant/getting-started](https://jef.codes/streetmerchant/getting-started).
