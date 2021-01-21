@@ -6,6 +6,7 @@ coverage/
 node_modules/
 
 .env
+output.txt
 #dotenv
 *.proxies
 success-*.png
