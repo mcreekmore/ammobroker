@@ -1,4 +1,5 @@
 const fs = require('fs');
+const colors = require('colors');
 const {CLIENT_RENEG_LIMIT} = require('tls');
 
 function read() {
@@ -29,16 +30,46 @@ function read() {
 
         recentlyAvailable.push(listing);
 
-        console.log(
-          listing.timestamp + listing.store + ':',
-          listing.brand + ' ' + listing.calibur + ' ' + listing.type
-        );
+        // console.log(
+        //   listing.timestamp + listing.store + ':',
+        //   listing.brand + ' ' + listing.calibur + ' ' + listing.type
+        // );
       }
     });
 
     if (recentlyAvailable.length === 0) {
-      console.log('No Available Listings Found Yet');
+      let string =
+        'Out of ' +
+        lines.length.toString() +
+        ' Requests, no available Listings Found Yet';
+      console.log(string.black.bgRed);
+    } else {
+      let string =
+        'Out of ' +
+        lines.length.toString() +
+        ' requests, ' +
+        recentlyAvailable.length.toString() +
+        ' listings found';
+      console.log(string.black.bgGreen);
     }
+
+    recentlyAvailable = recentlyAvailable.slice(
+      Math.max(recentlyAvailable.length - 5, 1)
+    );
+
+    recentlyAvailable.forEach(listing => {
+      let string =
+        listing.timestamp +
+        listing.store +
+        ':' +
+        listing.brand +
+        ' ' +
+        listing.calibur +
+        ' ' +
+        listing.type;
+      console.log(string.green);
+    });
+
     // console.log(recentlyAvailable);
   } catch (err) {
     console.error(err);
