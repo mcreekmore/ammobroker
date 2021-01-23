@@ -41,7 +41,7 @@ function read() {
       let string =
         'Out of ' +
         lines.length.toString() +
-        ' Requests, no available Listings Found Yet';
+        ' requests, no available listings found yet';
       console.log(string.black.bgRed);
     } else {
       let string =
