@@ -7,9 +7,9 @@ node_modules/
 
 .env
 output.txt
-dotenv
 *.proxies
 success-*.png
+dotenv
 
 *.wav
 *.mp3
