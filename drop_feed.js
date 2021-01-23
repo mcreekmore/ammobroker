@@ -37,7 +37,7 @@ function read() {
     });
 
     if (recentlyAvailable.length === 0) {
-      console.log('NO AVAILABLE LISTINGS FOUND YET');
+      console.log('No Available Listings Found Yet');
     }
     // console.log(recentlyAvailable);
   } catch (err) {
